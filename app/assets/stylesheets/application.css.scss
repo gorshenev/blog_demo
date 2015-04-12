@@ -1,0 +1,52 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+body {
+	background: #EAEAEA;
+}
+
+textarea {
+	min-height: 30rem;
+}
+
+#posts {
+	margin-top: 5rem;
+	background: #FFFFFF;
+  border-radius: 0.25rem;
+  -webkit-box-shadow: rgba(0,0,0,0.08) 0 2px 2px;
+  -moz-box-shadow: rgba(0,0,0,0.08) 0 2px 2px;
+  box-shadow: rgba(0,0,0,0.08) 0 2px 2px;
+  padding: 2rem 5%;
+	.post {
+		margin-bottom: 3rem;
+		padding-bottom: 3rem;
+		border-bottom: 1px solid #E9E9E9;
+		h2 {
+			font-weight: 300;
+		}
+		&:last-child {
+			margin-bottom: 0;
+			border-bottom: none;
+		}
+	}
+	h1 {
+	  text-align: center;
+	  font-weight: 300;
+	}
+	.date {
+		text-align: center;
+		font-style: italic;
+		font-size: 1rem;
+	}
+	hr {
+		width: 15%;
+		display: block;
+		margin: 3rem auto;
+	  height: 0;
+	  border-top: 2px solid #E2E5E7;
+	}
+	.content {
+		line-height: 1.75;
+		margin-bottom: 2rem;
+	}
+}

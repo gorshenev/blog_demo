@@ -1,0 +1,11 @@
+<div id="posts">
+	<h1><%= @post.title %></h1>
+	<p class="date">Published <%= @post.created_at.strftime("%A, %B %d") %></p>
+	<hr>
+	<div class="content">
+		<%= @post.body %>
+	</div>
+
+	<%= link_to 'Edit', edit_post_path(@post), class: "btn btn-default btn-small" %>
+
+</div>

@@ -1,0 +1,8 @@
+<div id="posts">
+  <% @posts.each do |post| %>
+    <div class="post">
+      <h2 class="title"><%= link_to post.title, post %></h2>
+      <div class="description"><%= truncate(post.body, length: 150) %></div>
+    </div>
+  <% end %>
+</div>
